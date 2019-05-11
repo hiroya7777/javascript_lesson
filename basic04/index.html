@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScriptの練習 - 04</title>
+</head>
+<body>
+<script>
+//q1
+var calc ={
+  add:function(){
+    console.log('x + y');
+  }
+};
+calc.add();
+
+var calc ={
+  substract:function(){
+    console.log('x - y');
+  }
+};
+calc.substract();
+
+var calc ={
+  multiply:function(){
+    console.log('x * y');
+  }
+};
+calc.multiply();
+
+var calc ={
+  divide:function(){
+    console.log('x / y');
+  }
+};
+calc.divide();
+
+//q2
+var human = greet('name','age')
+function greet(name, age){
+  var greetText = '名前は' + name + 'です。年齢は' + age + '歳です。';
+  return greetText
+}
+console.log(human);
+
+//q3
+var setTimeoutText = 'ここはsetTimeoutの中の関数です';
+
+setTimeout(function() { 
+  setTimeoutText = 'ここはsetTimeoutの中の関数です';
+  resolveScope();
+}, 3000);
+  function resolveScope() {
+  console.log(setTimeoutText);
+}
+  console.log(setTimeoutText);
+</script>
+</body>
+</html>

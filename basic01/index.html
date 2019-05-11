@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScriptの練習 - 01</title>
+</head>
+<body>
+<script> //javascriptはscriptタグを使う
+  console.log('Hello World!');
+
+  var text = 'javascriptの練習';
+  console.log(text);
+  console.log('text');
+
+  var num1= 6;
+  var num2= 24;
+
+  console.log(num1 + num2);
+  console.log(num1 - num2);
+  console.log(num1 * num2);
+  console.log(num1 / num2);
+
+  var num3 = '6';
+  var num4 = '24';
+
+  console.log(num3 + num4);
+
+  var string = 'これは文字列です。';
+  var number = 24;
+
+  console.log(string + number);
+
+  var nameList = ['arata', 'watanabe', 'totani', 'shibue']; //javascriptの配列表現
+
+  console.log('nameList[0] => ', nameList[0]); //要素のみ取り出す場合は、変数[]で用言する。*１つ目の要素は[0]で表す。
+  console.log('nameList[1] => ', nameList[1]);
+  console.log('nameList[2] => ', nameList[2]);
+  console.log('nameList[3] => ', nameList[3]);
+  console.log('nameList.length => ', nameList.length);
+
+  function showConsole(){
+    return 'This is console in showConsole function!';
+  }
+
+  var result = showConsole();
+    console.log(result);
+</script>
+</body>
+</html>
