@@ -8,10 +8,14 @@
 <script>
   
   //q1
+  //変数languagesArryに配列を定義して、コンソールで出力する 
+  //配列を出力するときは「変数[]」と表記する。今回は「javascript」を出力したいので、配列[3]と表記
   var languagesArray = ['Japanese', 'English', 'Spanish', 'JavaScript']
   console.log(languagesArray[3]);
 
   //q2
+  //変数に４つのオブジェクトを定義する。
+  // 今回は26を出力したいので、オブシェクトの値を取得するためにkeyであるageを指定する。
   var user = {
   name: 'arata',
   age: 26,
@@ -21,6 +25,8 @@
   console.log(user.age);
 
   //q3
+  //変数userlistの中にオブジェクを定義する。
+  // 今回はwatanabeを取得するので、配列[1].key[name]で出力する。
   var userList = [
   {
     name: 'arata',
@@ -38,6 +44,8 @@
   console.log(userList[1].name);
 
   //q4
+  // 変数playListの中に配列を定義する。
+  // 'The Legend of Zelda'を出力したいので、配列[].配列[]で出力する
   var playerList = [
   {
     name: 'arata',
@@ -68,6 +76,7 @@
   console.log(playerList[1].favorites[1])
 
   //q5
+  // 関数で返された値を変すresuliに代入して、consoleで出力する。
   var showText = function() {
   console.log('これは関数です。');
 }
@@ -86,12 +95,17 @@
 }
 
   //q7
+  // 変数countryListに配列を定義する。
+  // 代入した値をコンソールに表示したいので、繰り返しの条件式を用いて、配列の最後「Germany」が実行されるまで処理を繰り返すようにする。
+  // console.log[配列]で処理を実行する。
   var countryList = ['Japan', 'China', 'America', 'Spain', 'Germany'];
   for(var i=0; i<countryList.length;i++){
     console.log(countryList[i]);
   }
 
   //q8
+  // 変数multiplesTenに配列を定義する
+  // 繰り返しの条件式を用いて
   var multiplesTen = [0,10,20,30,40];
   for(var i=0; i<1;i++){
     console.log(multiplesTen);

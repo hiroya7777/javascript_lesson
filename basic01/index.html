@@ -6,6 +6,7 @@
 </head>
 <body>
 <script> //javascriptはscriptタグを使う
+  
   console.log('Hello World!');
 
   var text = 'javascriptの練習';
@@ -41,9 +42,28 @@
   function showConsole(){
     return 'This is console in showConsole function!';
   }
-
+ 
   var result = showConsole();
     console.log(result);
+  
+  function define1(){
+    return 'This is console in showConsole function!';
+    }
+    var define2 = function(){
+      return 'This is console in showConsole function!';
+      }
+    define1();
+    define2();
+    
+    for (var i=0; i<10; i++){
+      console.log(i+'回目のコンソール');
+    }
+    var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var sum = 0;
+    for (var i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+    }
+    console.log(sum);
 </script>
 </body>
 </html>
