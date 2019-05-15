@@ -7,36 +7,28 @@
 <body>
 <script>
 //q1
-var calc ={
-  add:function(){
-    console.log('x + y');
-  }
-};
-calc.add();
+var calc = {
+  add: function(x,y){
+    console.log(x+y);
+  },
 
-var calc ={
-  substract:function(){
-    console.log('x - y');
+  substract: function(x,y){
+    console.log(x - y);
+  },
+  multiply: function(x,y){
+    console.log(x * y);
+  },
+  divide: function(x,y){
+    console.log(x / y);
   }
-};
+}
+calc.add(5,5);
 calc.substract();
-
-var calc ={
-  multiply:function(){
-    console.log('x * y');
-  }
-};
 calc.multiply();
-
-var calc ={
-  divide:function(){
-    console.log('x / y');
-  }
-};
 calc.divide();
 
 //q2
-var human = greet('name','age')
+var human = greet('jon','25')
 function greet(name, age){
   var greetText = '名前は' + name + 'です。年齢は' + age + '歳です。';
   return greetText
