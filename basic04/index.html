@@ -7,11 +7,14 @@
 <body>
 <script>
 //q1
+// メソッドとはkey:valueのvalue部分に定義された関数のこと
+// 変数calcに４つのオブジェクトを持った配列を格納する
+// それぞれのオブジェクトのvalueに関数を定義する
+// オブジェクトには４つのメソッドがあり、変数.keyで出力する。
 var calc = {
   add: function(x,y){
-    console.log(x+y);
+    console.log(x + y);
   },
-
   substract: function(x,y){
     console.log(x - y);
   },
@@ -22,30 +25,35 @@ var calc = {
     console.log(x / y);
   }
 }
-calc.add(5,5);
-calc.substract();
-calc.multiply();
-calc.divide();
+  calc.add(5,5);
+  calc.substract(5,5);
+  calc.multiply(5,5);
+  calc.divide(5,5);
 
 //q2
-var human = greet('jon','25')
+// 関数greetに(name:jon,age:25)という引数を渡している
+// 文字列と引数を結合したものをgreetRextという変数に定義している
+// returnとすることで関数greettextを実行してから、greettextに返す処理をしている。
+// 変数を戻り値とすることで関数greetが実行された後に、戻りとして返すように実行される。
 function greet(name, age){
   var greetText = '名前は' + name + 'です。年齢は' + age + '歳です。';
   return greetText
 }
-console.log(human);
+console.log(greet('jon',25));
 
 //q3
-var setTimeoutText = 'ここはsetTimeoutの中の関数です';
-
+// 関数setTimeoutに'ここはset~'という文字列を代入した変数setTimeoutTextを引数とし、resolvescope関数を実行する。
+// 関数resolve〜ではsetTimeouttextを引数の値としてconsoleしているので、settimeout関数内で実行された引数が渡り出力される。
 setTimeout(function() { 
-  setTimeoutText = 'ここはsetTimeoutの中の関数です';
-  resolveScope();
+  var setTimeoutText = 'ここはsetTimeoutの中の関数です';
+  resolveScope(setTimeoutText);
 }, 3000);
-  function resolveScope() {
-  console.log(setTimeoutText);
+
+
+function resolveScope(text) {
+  console.log(text);
 }
-  console.log(setTimeoutText);
+// 変数・引数の渡し方　scopeの範囲を復習する。
 </script>
 </body>
 </html>

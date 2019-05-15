@@ -7,6 +7,61 @@
 <body>
 <script>
   // ここにJavaScriptを書いていきます
+  var userObj = createObj('Jonson', 23); // 関数createObjの実行。引数は'Jonson'と23
+
+// 関数createObjの定義。実行時に渡された引数はname,ageに入る
+function createObj(name, age) {
+  var user = {};
+  user.nam = name;
+  user.ag = age;
+  return user;
+}
+console.log(userObj);
+
+var obj = {
+    showText: function( name ) {
+    console.log('a'+name+'a')
+        //「name」を利用した処理を書く
+        
+    }
+}
+obj.showText('a');
+
+var obj = {
+    showText: function( nume ) {
+        
+        var result = nume + nume;
+        
+        //計算した結果を戻り値として返す
+        return result;
+        
+    }
+}
+console.log( obj.showText(10) );
+
+window.onload = function() {
+ 
+ console.log( 'Hello World' );
+ var num1 = 10;
+ 
+ function sample() {
+   
+   
+   console.log(num1);
+ }
+  
+ sample();
+  
+}
+function sum(num1, num2, num3){
+  /* ... */
+}
+
+sum(20, 15, 8);
+sum(19, 5, 37);
+sum(num1*num2*num3);
+
+sum();
 </script>
 </body>
 </html>

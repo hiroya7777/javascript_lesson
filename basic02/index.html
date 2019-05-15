@@ -26,6 +26,7 @@
 
   //q3
   //変数userlistの中にオブジェクを定義する。
+  // 配列の中のオブジェクトを出力する。
   // 今回はwatanabeを取得するので、配列[1].key[name]で出力する。
   var userList = [
   {
@@ -76,12 +77,11 @@
   console.log(playerList[1].favorites[1])
 
   //q5
-  // 関数で返された値を変すresuliに代入して、consoleで出力する。
+  // 変数showTextに関数を代入し、showText()で出力する。
   var showText = function() {
   console.log('これは関数です。');
 }
-  var result =showText();
-  console.log(result);
+  showText();
 
   //q6
   // この行で変数numを定義してください
@@ -99,15 +99,16 @@
   // 代入した値をコンソールに表示したいので、繰り返しの条件式を用いて、配列の最後「Germany」が実行されるまで処理を繰り返すようにする。
   // console.log[配列]で処理を実行する。
   var countryList = ['Japan', 'China', 'America', 'Spain', 'Germany'];
-  for(var i=0; i<countryList.length;i++){
+  for(var i=0; i<countryList.length; i++){
     console.log(countryList[i]);
   }
 
   //q8
   // 変数multiplesTenに配列を定義する
   // 繰り返しの条件式を用いて
+  // for分の書き方について、スペースを開ける開けないを統一する
   var multiplesTen = [];
-  for(var i=0; i<5;i++){
+  for(var i=0; i<5; i++){
     multiplesTen[i]= i*10;
   }
   console.log(multiplesTen);
